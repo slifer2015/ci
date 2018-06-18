@@ -1,3 +1,6 @@
 node {
-    sh 'echo hello world'
+    stage('Prepare') {
+        checkout scm
+        sh 'echo hello world'
+    }
 }
