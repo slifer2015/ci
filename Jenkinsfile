@@ -1,6 +1,3 @@
-node{
-    stage('prepare'){
-        checkout scm
-        sh "make clean"
-    }
+node {
+    sh 'echo hello world'
 }
