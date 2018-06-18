@@ -1,6 +1,10 @@
-pipeline {
-    stage('Prepare') {
+node {
+    stage('Build') {
         checkout scm
-        sh 'echo hello world'
+        sh "make all"
+    }
+    stage('deploy') {
+        checkout scm
+        sh "make deploy"
     }
 }
