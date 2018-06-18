@@ -1,2 +1,2 @@
 clean:
-    echo "hello"
+	echo "hello"
