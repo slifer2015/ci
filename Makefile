@@ -8,7 +8,6 @@ export BUILD=cd $(ROOT) && $(GO) install -v $(LD_ARGS)
 all:
 	GOPATH=$(GOPATH) $(BUILD) test.com/ci/cmd/...
 	echo $(USER)
-	docker build $(ROOT)
 run-server: all
 	$(BIN)/server
 

@@ -5,6 +5,6 @@ node {
     }
     stage('deploy') {
         checkout scm
-        sh "make deploy"
+        sh "docker build ."
     }
 }
